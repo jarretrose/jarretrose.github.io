@@ -1,15 +1,15 @@
-const App = () => {
+import { FC } from 'react';
+import MainContentWrapper from './components/MainContentWrapper';
+import NavControls from './components/NavControls';
+import ViewContentWrapper from './components/ViewContentWrapper';
+
+const App: FC = () => {
   return (
-    <div>
+    <MainContentWrapper>
       <h1>Jarret Rose</h1>
-      <ul>
-        <li>{`> home`}</li>
-        <li>{`> projects`}</li>
-        <li>{`> info`}</li>
-        <li>{`> contact`}</li>
-        <li>{`> me`}</li>
-      </ul>
-    </div>
+      <NavControls />
+      <ViewContentWrapper />
+    </MainContentWrapper>
   );
 };
 
