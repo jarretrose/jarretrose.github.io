@@ -1,7 +1,7 @@
 export enum NavState {
-  Home = 'home',
-  Projects = 'projects',
-  Info = 'info',
-  Contact = 'contact',
-  AboutMe = 'aboutMe',
+  HOME = '/home',
+  PROJECTS = '/projects',
+  INFO = '/info',
+  CONTACT = '/contact',
+  ABOUT_ME = '/about-me',
 }

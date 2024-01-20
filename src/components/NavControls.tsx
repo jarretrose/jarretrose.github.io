@@ -1,36 +1,24 @@
 import { FC } from 'react';
-import { useNavigation } from './NavigationContext';
 import { NavState } from './components.enums';
 
 const NavControls: FC = () => {
-  const { setNavState } = useNavigation();
-
-  const onClickHandler = (navState: NavState) => () => {
-    console.debug(`Click! Nav State Change: ${navState}`);
-    setNavState(navState);
-  };
-
   return (
     <div>
       <ul>
         <li>
-          <button onClick={onClickHandler(NavState.Home)}>{`> home`}</button>
+          <a href={NavState.HOME}>{NavState.HOME}</a>
         </li>
         <li>
-          <button
-            onClick={onClickHandler(NavState.Projects)}
-          >{`> projects`}</button>
+          <a href={NavState.PROJECTS}>{NavState.PROJECTS}</a>
         </li>
         <li>
-          <button onClick={onClickHandler(NavState.Info)}>{`> info`}</button>
+          <a href={NavState.INFO}>{NavState.INFO}</a>
         </li>
         <li>
-          <button
-            onClick={onClickHandler(NavState.Contact)}
-          >{`> contact`}</button>
+          <a href={NavState.CONTACT}>{NavState.CONTACT}</a>
         </li>
         <li>
-          <button onClick={onClickHandler(NavState.AboutMe)}>{`> me`}</button>
+          <a href={NavState.ABOUT_ME}>{NavState.ABOUT_ME}</a>
         </li>
       </ul>
     </div>
