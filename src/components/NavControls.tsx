@@ -2,7 +2,7 @@ import { FC } from 'react';
 import { NavState, NavStateText } from './components.enums';
 import { NavLink } from 'react-router-dom';
 
-const NavControls: FC = () => {
+export const NavControls: FC = () => {
   return (
     <div>
       <ul>
@@ -26,5 +26,3 @@ const NavControls: FC = () => {
     </div>
   );
 };
-
-export default NavControls;
