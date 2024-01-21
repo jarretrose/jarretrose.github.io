@@ -1,26 +1,28 @@
 import { FC } from 'react';
-import { NavState } from './components.enums';
+import { NavState, NavStateText } from './components.enums';
+import { NavLink } from 'react-router-dom';
 
 const NavControls: FC = () => {
   return (
     <div>
       <ul>
         <li>
-          <a href={NavState.HOME}>{NavState.HOME}</a>
+          <NavLink to={NavState.HOME}>{NavStateText.HOME}</NavLink>
         </li>
         <li>
-          <a href={NavState.PROJECTS}>{NavState.PROJECTS}</a>
+          <NavLink to={NavState.PROJECTS}>{NavStateText.PROJECTS}</NavLink>
         </li>
         <li>
-          <a href={NavState.INFO}>{NavState.INFO}</a>
+          <NavLink to={NavState.INFO}>{NavStateText.INFO}</NavLink>
         </li>
         <li>
-          <a href={NavState.CONTACT}>{NavState.CONTACT}</a>
+          <NavLink to={NavState.ABOUT_ME}>{NavStateText.ABOUT_ME}</NavLink>
         </li>
         <li>
-          <a href={NavState.ABOUT_ME}>{NavState.ABOUT_ME}</a>
+          <NavLink to={NavState.CONTACT}>{NavStateText.CONTACT}</NavLink>
         </li>
       </ul>
+      <hr />
     </div>
   );
 };
