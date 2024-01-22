@@ -1,10 +1,13 @@
 import { FC } from 'react';
+import { PageTitle_H2 } from '../components/PageTitle_H2';
 
 export const Contact: FC = () => {
   return (
     <div>
-      <h1>Contact</h1>
-      <p>Get in touch.</p>
+      <PageTitle_H2
+        title='Contact'
+        subtitle='My Contact Info'
+      />
     </div>
   );
 };

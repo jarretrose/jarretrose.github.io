@@ -16,8 +16,9 @@ export const NavControls: FC = () => {
       <NavLink to={NavState.HOME}>{NavStateText.HOME}</NavLink>
       <NavLink to={NavState.PROJECTS}>{NavStateText.PROJECTS}</NavLink>
       <NavLink to={NavState.INFO}>{NavStateText.INFO}</NavLink>
-      <NavLink to={NavState.ABOUT_ME}>{NavStateText.ABOUT_ME}</NavLink>
+      <NavLink to={NavState.ABOUT}>{NavStateText.ABOUT}</NavLink>
       <NavLink to={NavState.CONTACT}>{NavStateText.CONTACT}</NavLink>
+      <NavLink to={NavState.MISCELLANY}>{NavStateText.MISCELLANY}</NavLink>
     </div>
   );
 };

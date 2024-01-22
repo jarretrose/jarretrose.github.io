@@ -1,13 +1,13 @@
 import { FC } from 'react';
 import { PageTitle_H2 } from '../components/PageTitle_H2';
 
-export const Projects: FC = () => {
+export const Miscellany: FC = () => {
   return (
-    <header>
+    <div>
       <PageTitle_H2
-        title='Projects'
-        subtitle='My Projects'
+        title='Miscellany'
+        subtitle='My Miscellany'
       />
-    </header>
+    </div>
   );
 };

@@ -3,7 +3,8 @@ export enum NavState {
   PROJECTS = '/projects',
   INFO = '/info',
   CONTACT = '/contact',
-  ABOUT_ME = '/about-me',
+  ABOUT = '/about',
+  MISCELLANY = '/miscellany',
 }
 
 export enum NavStateText {
@@ -11,5 +12,6 @@ export enum NavStateText {
   PROJECTS = 'Projects',
   INFO = 'Info',
   CONTACT = 'Contact',
-  ABOUT_ME = 'About Me',
+  ABOUT = 'About',
+  MISCELLANY = 'Miscellany',
 }
