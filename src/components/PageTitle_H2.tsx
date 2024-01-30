@@ -19,7 +19,6 @@ export const PageTitle_H2: FC<PageTitle_H2Props> = ({ title, subtitle }) => {
         <h2>{title}</h2>
         <p className='subtitle'>{subtitle}</p>
       </header>
-      <hr />
     </>
   );
 };

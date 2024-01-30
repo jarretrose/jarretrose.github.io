@@ -1,5 +1,4 @@
 import { FC } from 'react';
-import { loremIpsumOne, loremIpsumTwo } from '../utils';
 import { PageTitle_H2 } from '../components/PageTitle_H2';
 
 export const Home: FC = () => {
@@ -7,10 +6,9 @@ export const Home: FC = () => {
     <div>
       <PageTitle_H2
         title='Home'
-        subtitle='Welcome to my website!'
+        subtitle='This is just a project with which I can goof around; it is absolutely
+        bare minimum. Please pay it no mind.'
       />
-      <p>{loremIpsumOne}</p>
-      <p>{loremIpsumTwo}</p>
     </div>
   );
 };
