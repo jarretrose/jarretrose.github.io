@@ -12,7 +12,7 @@ const AppContainer: FC<PropsWithChildren> = ({ children }) => {
 const AppContents: FC = () => {
   return (
     <>
-      <div className='flex flex-row justify-between'>
+      <div className='flex flex-row justify-between items-center'>
         <MainTitle />
         <NavControls />
       </div>
