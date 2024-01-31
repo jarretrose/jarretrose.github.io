@@ -6,7 +6,7 @@ import { ViewContainer } from './components/ViewContainer';
 import './index.css';
 
 const AppContainer: FC<PropsWithChildren> = ({ children }) => {
-  return <div className='container flex flex-col gap-4'>{children}</div>;
+  return <div className='container mt-12 flex flex-col gap-4'>{children}</div>;
 };
 
 const AppContents: FC = () => {
