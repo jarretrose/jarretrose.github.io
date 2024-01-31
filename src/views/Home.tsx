@@ -3,12 +3,12 @@ import { PageTitle_H2 } from '../components/PageTitle_H2';
 
 export const Home: FC = () => {
   return (
-    <div>
+    <>
       <PageTitle_H2
         title='Home'
-        subtitle='This is just a project with which I can goof around; it is absolutely
-        bare minimum. Please pay it no mind.'
+        subtitle='Home again, home again, jiggity-jig.'
       />
-    </div>
+      <p>This is me.</p>
+    </>
   );
 };

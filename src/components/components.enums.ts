@@ -1,4 +1,5 @@
 export enum NavState {
+  SPLASH = '/',
   HOME = '/home',
   PROJECTS = '/projects',
   INFO = '/info',
@@ -8,6 +9,7 @@ export enum NavState {
 }
 
 export enum NavStateText {
+  SPLASH = 'Splash',
   HOME = 'Home',
   PROJECTS = 'Projects',
   INFO = 'Info',

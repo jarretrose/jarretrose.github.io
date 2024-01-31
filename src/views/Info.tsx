@@ -3,20 +3,22 @@ import { PageTitle_H2 } from '../components/PageTitle_H2';
 
 export const Info: FC = () => {
   return (
-    <div>
+    <>
       <PageTitle_H2
         title='Info'
-        subtitle='My Info'
+        subtitle='Me stuff.'
       />
-      <p>
-        My Narrative Resume -- <i>TBD</i>
-      </p>
-      <p>
-        Professional Resume -- <i>TBD</i>
-      </p>
-      <p>
-        Academic C.V. -- <i>TBD</i>
-      </p>
-    </div>
+      <ul>
+        <li>
+          My Narrative Resume -- <i>TBD</i>
+        </li>
+        <li>
+          Professional Resume -- <i>TBD</i>
+        </li>
+        <li>
+          Academic C.V. -- <i>TBD</i>
+        </li>
+      </ul>
+    </>
   );
 };

@@ -1,26 +1,29 @@
 import { FC } from 'react';
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
 import { MainTitle } from './components/MainTitle';
 import { NavControls } from './components/NavControls';
-
-const styles = {
-  display: 'flex',
-  flexDirection: 'row' as const,
-  justifyContent: 'space-between',
-  alignItems: 'center',
-};
+import { ViewContainer } from './components/ViewContainer';
+import './index.css';
+import { Splash } from './views/Splash';
 
 export const App: FC = () => {
+  const location = useLocation();
+
+  const isSplash = location.pathname === '/';
+
   return (
-    <>
-      <div style={styles}>
+    <div className='container flex flex-col gap-4'>
+      <div className='flex flex-row justify-between'>
         <MainTitle />
         <NavControls />
       </div>
       <hr />
       <div>
-        <Outlet />
+        <ViewContainer>
+          {isSplash && <Splash />}
+          <Outlet />
+        </ViewContainer>
       </div>
-    </>
+    </div>
   );
 };

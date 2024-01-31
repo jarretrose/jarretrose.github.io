@@ -15,11 +15,6 @@ export const router = createBrowserRouter([
     errorElement: <div>404</div>,
     children: [
       {
-        index: true,
-        element: <Home />,
-      },
-      {
-        // index: true,
         path: NavState.HOME,
         element: <Home />,
       },

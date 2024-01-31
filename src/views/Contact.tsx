@@ -1,22 +1,25 @@
 import { FC } from 'react';
 import { PageTitle_H2 } from '../components/PageTitle_H2';
+import './index.views.css';
 
 export const Contact: FC = () => {
   return (
-    <div>
+    <>
       <PageTitle_H2
         title='Contact'
-        subtitle='My Contact Info'
+        subtitle='Get in touch.'
       />
-      <div>
-        <ul>
-          <li>
-            <a href='mailto: jarretrose@gmail.com'>jarretrose@gmail.com</a>
-          </li>
-          <li>
-            <a href='https://www.linkedin.com/in/jarret-rose/'>LinkedIn</a>
-          </li>
-        </ul>
+      <div className='flex flex-col gap-4'>
+        <div>
+          <ul>
+            <li>
+              <a href='mailto: jarretrose@gmail.com'>jarretrose@gmail.com</a>
+            </li>
+            <li>
+              <a href='https://www.linkedin.com/in/jarret-rose/'>LinkedIn</a>
+            </li>
+          </ul>
+        </div>
         <div>
           <h3>Send me a message!</h3>
           <div>
@@ -56,6 +59,6 @@ export const Contact: FC = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
