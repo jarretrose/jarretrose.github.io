@@ -6,7 +6,6 @@ import './index.components.css';
 export const NavControls: FC = () => {
   return (
     <div className='flex-1 flex flex-row justify-between'>
-      <NavLink to={NavState.SPLASH}>{NavStateText.SPLASH}</NavLink>
       <NavLink to={NavState.HOME}>{NavStateText.HOME}</NavLink>
       <NavLink to={NavState.PROJECTS}>{NavStateText.PROJECTS}</NavLink>
       <NavLink to={NavState.INFO}>{NavStateText.INFO}</NavLink>

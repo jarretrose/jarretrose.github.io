@@ -1,19 +1,23 @@
-import { createBrowserRouter } from 'react-router-dom';
+import { createHashRouter } from 'react-router-dom';
 import { App } from './App';
+import { NavState } from './components/components.enums';
 import { AboutMe } from './views/About';
 import { Contact } from './views/Contact';
 import { Home } from './views/Home';
 import { Info } from './views/Info';
-import { Projects } from './views/Projects';
 import { Miscellany } from './views/Miscellany';
-import { NavState } from './components/components.enums';
+import { Projects } from './views/Projects';
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
   {
     path: '/',
     element: <App />,
     errorElement: <div>404</div>,
     children: [
+      {
+        index: true,
+        element: <Home />,
+      },
       {
         path: NavState.HOME,
         element: <Home />,

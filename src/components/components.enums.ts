@@ -1,11 +1,11 @@
 export enum NavState {
   SPLASH = '/',
-  HOME = '/home',
-  PROJECTS = '/projects',
-  INFO = '/info',
-  CONTACT = '/contact',
-  ABOUT = '/about',
-  MISCELLANY = '/miscellany',
+  HOME = 'home',
+  PROJECTS = 'projects',
+  INFO = 'info',
+  CONTACT = 'contact',
+  ABOUT = 'about',
+  MISCELLANY = 'miscellany',
 }
 
 export enum NavStateText {
