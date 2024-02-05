@@ -1,4 +1,4 @@
-import { createHashRouter } from 'react-router-dom';
+import { createBrowserRouter } from 'react-router-dom';
 import { App } from './App';
 import { NavState } from './components/components.enums';
 import { AboutMe } from './views/About';
@@ -8,7 +8,7 @@ import { Info } from './views/Info';
 import { Miscellany } from './views/Miscellany';
 import { Projects } from './views/Projects';
 
-export const router = createHashRouter([
+export const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
