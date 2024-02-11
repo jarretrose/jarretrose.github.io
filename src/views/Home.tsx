@@ -8,7 +8,7 @@ export const Home: FC = () => {
         title='Home'
         subtitle='Home again, home again, jiggity-jig.'
       />
-      <p>This is me.</p>
+      <p>This is me. This is a work in progress. This is incomplete.</p>
     </>
   );
 };
