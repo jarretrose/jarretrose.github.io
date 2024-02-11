@@ -1,6 +1,6 @@
 import { FC, useState } from 'react';
 import { PageTitle_H2 } from '../components/PageTitle_H2';
-import { GameOfLife } from '../projects/gameOfLife/GameOfLife';
+// import { GameOfLife } from '../projects/gameOfLife/GameOfLife';
 
 export const Projects: FC = () => {
   const [view, setView] = useState('boring');
