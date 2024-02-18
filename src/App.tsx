@@ -1,8 +1,8 @@
 import { FC, PropsWithChildren } from 'react';
 import { Outlet } from 'react-router-dom';
-import { MainTitle } from './components/MainTitle';
+import { MainTitle } from './views/MainTitle';
 import { NavControls } from './components/NavControls';
-import { ViewContainer } from './components/ViewContainer';
+import { ViewContainer } from './views/ViewContainer';
 import './index.css';
 
 const AppContainer: FC<PropsWithChildren> = ({ children }) => {

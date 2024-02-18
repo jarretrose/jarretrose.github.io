@@ -1,6 +1,8 @@
 import { FC } from 'react';
 import { PageTitle_H2 } from '../components/PageTitle_H2';
 import './index.views.css';
+import { TextField } from '../components/TextField';
+import { TextArea } from '../components/TextArea';
 
 export const Contact: FC = () => {
   return (
@@ -30,26 +32,24 @@ export const Contact: FC = () => {
             >
               <div>
                 <div>
-                  <label htmlFor='name'>Name:</label>
-                  <input
-                    type='text'
-                    name='name'
-                    id='name'
+                  <TextField
+                    label={'Name'}
+                    name={'name'}
+                    placeholder='Your name here.'
                   />
                 </div>
                 <div>
-                  <label htmlFor='email'>Email:</label>
-                  <input
+                  <TextField
+                    label={'Email'}
+                    name={'email'}
                     type='email'
-                    name='email'
-                    id='email'
                   />
                 </div>
                 <div>
-                  <label htmlFor='message'>Message:</label>
-                  <textarea
+                  <TextArea
+                    label='Message'
                     name='message'
-                    id='message'
+                    placeholder='Your message here.'
                     cols={30}
                     rows={10}
                   />

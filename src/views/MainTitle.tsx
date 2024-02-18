@@ -1,5 +1,5 @@
 import { AppTexts } from '../main.enums';
-import './index.components.css';
+import './index.views.css';
 
 export const MainTitle = () => (
   <div className='flex-1'>
