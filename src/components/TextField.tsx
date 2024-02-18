@@ -17,7 +17,7 @@ export const TextField: FC<TextFieldProps> = (props) => {
         htmlFor={props.name}
       >{`${props.label}: `}</label>
       <input
-        className='col-span-4 border-2 border-gray-300 rounded-md w-full'
+        className='col-span-4 border border-gray-400 rounded-md w-full px-1'
         {...props}
       />
     </div>

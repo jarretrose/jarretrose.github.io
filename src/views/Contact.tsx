@@ -3,6 +3,7 @@ import { PageTitle_H2 } from '../components/PageTitle_H2';
 import './index.views.css';
 import { TextField } from '../components/TextField';
 import { TextArea } from '../components/TextArea';
+import { PrimaryButton } from '../components/PrimaryButton';
 
 export const Contact: FC = () => {
   return (
@@ -24,39 +25,34 @@ export const Contact: FC = () => {
         </div>
         <div>
           <h3>Send me a message!</h3>
-          <div>
-            <form
-              action=''
-              method=''
-              className='contactForm'
-            >
-              <div>
-                <div>
-                  <TextField
-                    label={'Name'}
-                    name={'name'}
-                    placeholder='Your name here.'
-                  />
-                </div>
-                <div>
-                  <TextField
-                    label={'Email'}
-                    name={'email'}
-                    type='email'
-                  />
-                </div>
-                <div>
-                  <TextArea
-                    label='Message'
-                    name='message'
-                    placeholder='Your message here.'
-                    cols={30}
-                    rows={10}
-                  />
-                </div>
-              </div>
-            </form>
-          </div>
+          <form
+            action=''
+            method=''
+            className='contactForm'
+          >
+            <TextField
+              label={'Name'}
+              name={'name'}
+              placeholder='Your name here.'
+            />
+
+            <TextField
+              label={'Email'}
+              name={'email'}
+              type='email'
+              placeholder='youremail@email.com'
+            />
+
+            <TextArea
+              label='Message'
+              name='message'
+              placeholder='Your message here.'
+              cols={30}
+              rows={10}
+            />
+
+            <PrimaryButton buttonText='Submit' />
+          </form>
         </div>
       </div>
     </>

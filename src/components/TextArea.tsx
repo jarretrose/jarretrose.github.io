@@ -13,7 +13,7 @@ export const TextArea: FC<TextAreaProps> = (props) => {
         htmlFor={props.name}
       >{`${props.label}: `}</label>
       <textarea
-        className='col-span-12 border-2 border-gray-300 rounded-md'
+        className='col-span-12 border border-gray-400 rounded-md px-1'
         {...props}
       />
     </div>
